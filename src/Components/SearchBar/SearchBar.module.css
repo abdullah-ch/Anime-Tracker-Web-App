@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.span {
+  color: RGB(229, 9, 20);
+  padding-right: 50px;
+  font-size: 250%;
+  font-weight: 700;
+}
+
+.span:hover {
+  cursor: pointer;
+}
+
+.button {
+  color: aliceblue;
+  background-color: rgb(66, 64, 64);
+ 
+}
+
+.button:hover {
+  background-color: RGB(229, 9, 20);
+}
+
+.searchBar {
+  padding-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchBar {
+    padding-left: 20px;
+  }
+  .span {
+    font-size: 140%;
+  }
+
+  .button{
+    margin-top: 15px;
+  }
+}

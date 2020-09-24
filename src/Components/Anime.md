@@ -1,0 +1,17 @@
+title, image_url, synopsis, score, rated , airing , episodes , start_date ,
+end_date , mal_id , url, members
+
+Above are all the objects in the api !
+
+
+
+
+
+
+
+
+
+
+
+
+        

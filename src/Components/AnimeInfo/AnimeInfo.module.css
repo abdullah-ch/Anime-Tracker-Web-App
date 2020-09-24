@@ -1,0 +1,59 @@
+.box {
+  padding: 50px 330px 330px 330px;
+  color:aliceblue
+}
+
+
+.btn {
+  color: aliceblue;
+  align-content: center;
+
+  background-color: rgb(66, 64, 64); 
+  
+}
+
+.btn:hover {
+  background-color: RGB(229, 9, 20);
+}
+
+.fakeBox {
+  display: flex;
+  border: 15px solid red;
+  background-color: black;
+  color: aliceblue;
+  margin: auto;
+  padding: 20px;
+  align-content: center;
+
+  height: auto;
+  flex-wrap: wrap;
+}
+.text {
+  font-weight: bolder;
+}
+
+p {
+  font-size: x-large;
+}
+
+.image {
+  text-align: left;
+  width: 300px;
+  padding-right: 15px;
+}
+
+.right {
+  padding: 20px;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    padding: 0px;
+    text-align: center;
+  }
+  
+.image {
+  text-align: center;
+}
+}
