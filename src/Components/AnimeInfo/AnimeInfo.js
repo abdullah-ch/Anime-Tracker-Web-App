@@ -110,7 +110,7 @@ const AnimeInfo = () => {
             className={styles.btn}
             type="submit"
           >
-            Find Out More
+            Find Out More !
           </Button>
         </div>
       </div>
