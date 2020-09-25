@@ -1,26 +1,27 @@
 .footer {
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:black;
-  color:aliceblue;
+  background-color: black;
+  color: aliceblue;
+  padding-bottom: 30px;
+  font-size: 3em;
   text-align: center;
-  padding-bottom: 10px;
 }
 
-.span {
- color:aliceblue;
- font-weight: bold;
+span {
+  padding: 10px;
+}
+a {
+  color: aliceblue;
 }
 
-.span:hover{
-    cursor: pointer;
- 
+a:hover {
+  color: RGB(229, 9, 20);
+}
+.spann {
+  color: aliceblue;
+  font-weight: bold;
+  align-items: center;
 }
 
-@media only screen and (min-width: 600px) {
-  .footer{
-    position: sticky;
-  }
+.spann:hover {
+  cursor: pointer;
 }
