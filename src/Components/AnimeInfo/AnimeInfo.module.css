@@ -18,7 +18,7 @@
 
 .fakeBox {
   display: flex;
-  border: 15px solid red;
+  border: 15px solid RGB(229, 9, 20);
   background-color: black;
   color: aliceblue;
   margin: auto;
