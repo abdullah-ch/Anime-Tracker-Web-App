@@ -1,4 +1,4 @@
-Live Link = https://abdullahch-anime-tracker-app.netlify.app/
+Live Link = https://abdullahch-anime-tracker.netlify.app/
 
 
 
