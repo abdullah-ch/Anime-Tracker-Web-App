@@ -5,7 +5,7 @@ Above are all the objects in the api !
 
 
 API is https://api.jikan.moe/v3.. Look into Api.js for further concern!
-I have used about 4 variants of this API!
+I have used 4 variants of this API!
 
 
 
