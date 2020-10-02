@@ -6,13 +6,22 @@
 
 >A web application that shows you the  Recent releases, top rated and also upcoming hype.
  
- ## 🎩 Screenshot
-  <img src="src\Components\anime1.PNG" alt="anime">
-  <br>
-  <img src="src\Components\anime2.PNG" alt="anime">
-
 ## 👉LIVE LINK
 >https://abdullahch-anime-tracker.netlify.app/
+ 
+## 🎩 Screenshot
+<div>
+<th>
+	<td>
+  <img src="src\Components\anime1.PNG" alt="anime">
+	</td>
+  <br>
+	<td>
+  <img src="src\Components\anime2.PNG" alt="anime">
+  	</td>
+</th>
+</div>
+
 
 ## 🚀 FEATURES
 
