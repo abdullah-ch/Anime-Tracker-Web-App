@@ -49,7 +49,6 @@ export const apiDataDay = async () => {
       "thursday",
       "friday",
       "saturday",
-      
     ];
     var date = new Date();
     console.log("Today's Date", date);
