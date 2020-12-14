@@ -12,7 +12,6 @@ const GenreCard = () => {
 
   useEffect(() => {
     callGenreApi();
-    
     // eslint-disable-next-line
   }, []);
 
