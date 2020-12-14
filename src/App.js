@@ -9,6 +9,7 @@ import Cards from "./Components/Cards/Cards";
 import Genre from "./Components/Genre/Genre";
 import CustomFooter from "./Components/Footer/Footer";
 import GenreCard from "./Components/GenreCard/GenreCard";
+import UpcomingAnime from "./Components/UpcomingAnime/UpcomingAnime";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/anime/cards" component={Cards} />
         <Route path="/anime/categories" component={Genre} />
         <Route path="/anime/genre" component={GenreCard} />
+        <Route path="/anime/season/later" component={UpcomingAnime} />
         <CustomFooter />
       </div>
     </Router>

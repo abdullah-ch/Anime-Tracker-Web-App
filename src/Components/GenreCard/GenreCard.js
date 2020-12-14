@@ -22,7 +22,6 @@ const GenreCard = () => {
   };
   return (
     <div className={styles.container}>
-      {console.log(genreArray)}
       {genreArray === []
         ? null
         : genreArray.map((anime, key) => {

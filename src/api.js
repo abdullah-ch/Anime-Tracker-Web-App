@@ -64,11 +64,9 @@ export const apiDataDay = async () => {
 
 export const apiDataGenres = async (genreID) => {
   try {
-    console.log("genre id is ", genreID);
     const {
       data: { anime },
     } = await axios.get(`${url}/genre/anime/${genreID}`);
-    console.log("Anime Genre Array is", anime);
     return anime;
   } catch (error) {
     console.log(error);
@@ -120,3 +118,15 @@ export const genres = [
   "Seinen",
   "Josei",
 ];
+
+export const apiDataUpcomingAll = async () => {
+  try {
+    const {
+      data: { anime },
+    } = await axios.get(`${url}/season/later`);
+    console.log("Upcoming anime", anime);
+    return anime;
+  } catch (error) {
+    console.log(error);
+  }
+};
