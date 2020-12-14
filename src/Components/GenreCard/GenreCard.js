@@ -12,6 +12,7 @@ const GenreCard = () => {
 
   useEffect(() => {
     callGenreApi();
+    // eslint-disable-next-line
   }, []);
 
   const callGenreApi = async () => {
@@ -34,22 +35,22 @@ const GenreCard = () => {
                   animeName = animeName.replace(/\s+/g, "");
                   history.push({
                     pathname: `/anime/info/${animeName}`,
-                    // state: {
-                    //   img: anime.image_url,
-                    //   title: anime.title,
-                    //   synopsis: anime.synopsis,
-                    //   score: anime.score,
-                    //   rated: anime.rated,
-                    //   airing: anime.airing_start,
-                    //   episodes: anime.episodes,
-                    //   type: anime.type,
-                    //   mal_id: anime.mal_id,
-                    //   members: anime.members,
-                    //   genres: anime.genres,
-                    //   start_date: anime.start_date,
-                    //   end_date: anime.end_date,
-                    //   url: anime.url,
-                    //},
+                    state: {
+                      img: anime.image_url,
+                      title: anime.title,
+                      synopsis: anime.synopsis,
+                      score: anime.score,
+                      rated: anime.rated,
+                      airing: anime.airing_start,
+                      episodes: anime.episodes,
+                      type: anime.type,
+                      mal_id: anime.mal_id,
+                      members: anime.members,
+                      genres: anime.genres,
+                      start_date: anime.start_date,
+                      end_date: anime.end_date,
+                      url: anime.url,
+                    },
                   });
                   window.location.href = `/anime/info/${animeName}`;
                 }}
