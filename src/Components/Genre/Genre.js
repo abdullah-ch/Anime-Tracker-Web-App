@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./Genre.module.css";
 import { genres } from "../../api";
+import { useHistory } from "react-router-dom";
 
 const Genre = () => {
+  let history = useHistory();
   return (
     <div className={styles.gridContainer}>
       {genres.map((genre, i) => (
@@ -10,7 +12,14 @@ const Genre = () => {
           className={styles.gridItem}
           onClick={(event) => {
             event.preventDefault();
-            window.location = `/anime/genre/${genre}/${i}`;
+            const genreID = ++i;
+            history.push({
+              pathname: `/anime/genre/${genre}`,
+              state: {
+                genreID: genreID,
+              },
+            });
+            window.location = `/anime/genre/${genre}`;
           }}
         >
           {genre}

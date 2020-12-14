@@ -64,12 +64,12 @@ export const apiDataDay = async () => {
 
 export const apiDataGenres = async (genreID) => {
   try {
-    console.log("mein aa rha hun");
-    const 
-      apiGenre
-     = await axios.get(`${url}/genre/anime/${genreID}`);
-    console.log("Anime Genre Array is", apiGenre);
-    return apiGenre;
+    console.log("genre id is ", genreID);
+    const {
+      data: { anime },
+    } = await axios.get(`${url}/genre/anime/${genreID}`);
+    console.log("Anime Genre Array is", anime);
+    return anime;
   } catch (error) {
     console.log(error);
   }
@@ -82,37 +82,41 @@ export const genres = [
   "Comedy",
   "Dementia",
   "Demons",
+  "Mystery",
   "Drama",
   "Ecchi",
   "Fantasy",
   "Game",
-  "Harem",
   "Hentai",
   "Historical",
-  "Horror",
-  "Josei",
+  "Horror", // 14
   "Kids",
   "Magic",
-  "Martial Arts",
+  "Martial Arts", //17
   "Mecha",
-  "Military",
+  "Music",
   "Parody",
-  "Police",
-  "Psychological",
-  "Romance",
   "Samurai",
-  "School",
+  "Romance",
+  "School", //23
   "Sci-Fi",
-  "Seinen",
   "Shoujo",
   "Shoujo Ai",
-  "Slice of Life",
+  "Shounen",
+  "Shounen Ai",
   "Space",
   "Sports",
-  "Super Power",
-  "Supernatural",
-  "Thriller",
+  "Super Power", //31
   "Vampire",
   "Yaoi",
-  "Yuri",
+  "Yuri", //34
+  "Harem",
+  "Slice of Life",
+  "Supernatural",
+  "Military",
+  "Police",
+  "Psychological",
+  "Thriller",
+  "Seinen",
+  "Josei",
 ];
