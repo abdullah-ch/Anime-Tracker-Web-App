@@ -1,0 +1,11 @@
+.categories {
+    padding-top: 5px;
+  text-align: center;
+   font-size: 250%;
+  font-weight: 500;
+}
+
+li {
+  display: inline;
+  margin: 20px;
+}

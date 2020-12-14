@@ -6,7 +6,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import AnimeInfo from "./Components/AnimeInfo/AnimeInfo";
 import Cards from "./Components/Cards/Cards";
+import Genre from "./Components/Genre/Genre";
 import CustomFooter from "./Components/Footer/Footer";
+import GenreCard from "./Components/GenreCard/GenreCard";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/" exact component={Main} />
         <Route path="/anime/info" component={AnimeInfo} />
         <Route path="/anime/cards" component={Cards} />
+        <Route path="/anime/categories" component={Genre} />
+        <Route path="/anime/genre" component={GenreCard} />
         <CustomFooter />
       </div>
     </Router>

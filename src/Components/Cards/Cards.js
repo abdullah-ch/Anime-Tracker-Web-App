@@ -14,7 +14,6 @@ const Cards = () => {
   const callApi = async () => {
     const path = window.location.pathname.split("/");
     const animeName = path[path.length - 1];
-    console.log("anime name is", animeName);
     var results = await apiData(animeName);
     setAnimeArray(results);
   };

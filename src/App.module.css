@@ -3,7 +3,10 @@
   padding: 0px;
 }
 
-.container{
+:root {
+  background-color: black;
+}
+.container {
   background-color: black;
 }
 
@@ -27,12 +30,10 @@
   border-radius: 10px;
   background: rgba(255, 0, 0, 0.8);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-  box-shadow: none; 
-  
+  box-shadow: none;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 0, 0, 0.4);
-  
 }
 
 ::-webkit-scrollbar-track {
