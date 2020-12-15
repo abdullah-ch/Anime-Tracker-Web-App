@@ -30,7 +30,15 @@ const Menu = () => {
         </li>
 
         <li>
-          <a href="null">Seasons</a>
+          <a
+            href="null"
+            onClick={(event) => {
+              event.preventDefault();
+              window.location = "/anime/archive";
+            }}
+          >
+            Seasons
+          </a>
         </li>
       </ul>
     </div>
