@@ -9,19 +9,19 @@ const SeasonCards = () => {
   const history = useHistory();
   useEffect(() => {
     callApi();
+    // eslint-disable-next-line
   }, []);
 
   const callApi = async () => {
     try {
-        const year = location.state.year;
-        let season = location.state.season;
-        season = season.toLowerCase();
-        const data = await apiDataYearSeason(year, season);
-        setSeasonAnimeArray(data);
+      const year = location.state.year;
+      let season = location.state.season;
+      season = season.toLowerCase();
+      const data = await apiDataYearSeason(year, season);
+      setSeasonAnimeArray(data);
     } catch (error) {
       console.log(error);
     }
-    
   };
   console.log("Year Season Anime", seasonAnimeArray);
 
