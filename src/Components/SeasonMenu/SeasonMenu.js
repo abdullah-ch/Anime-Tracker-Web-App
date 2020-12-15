@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./SeasonMenu.module.css";
 import { apiDataSeasonArchive } from "../../api";
 import { Card } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 const SeasonMenu = () => {
+  let history = useHistory();
+
   const [seasonArchiveArray, setSeasonArchiveArray] = useState([]);
 
   useEffect(() => {
@@ -38,8 +41,18 @@ const SeasonMenu = () => {
                       {seasons.map((season) => (
                         <Card.Link
                           href="#"
-                          onClick={(event) => {}}
                           className={styles.season}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            history.push({
+                              pathname: `/anime/season/${year}/${season}`,
+                              state: {
+                                year: year,
+                                season: season,
+                              },
+                            });
+                            window.location.href = `/anime/season/${year}/${season}`;
+                          }}
                         >
                           {season}
                         </Card.Link>

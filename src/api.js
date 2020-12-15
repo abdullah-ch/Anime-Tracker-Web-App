@@ -135,8 +135,19 @@ export const apiDataSeasonArchive = async () => {
     const {
       data: { archive },
     } = await axios.get(`${url}/season/archive`);
-    console.log("Archive anime", archive);
     return archive;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const apiDataYearSeason = async (year, season) => {
+  try {
+    const {
+      data: { anime },
+    } = await axios.get(`${url}/season/${year}/${season}`);
+    console.log("DataYear", anime);
+    return anime;
   } catch (error) {
     console.log(error);
   }
