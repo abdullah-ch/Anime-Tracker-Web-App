@@ -1,9 +1,33 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap;
 }
-
+.cardCont {
+  width: 22rem;
+  background-color: rgb(65, 62, 62);
+  box-shadow: 1.5px 4.5px rgba(255, 2, 2, 0.63);
+  border-radius: 25px;
+  /* //background-color: RGB(242, 242, 242); */
+}
 .card {
-  padding-bottom: 10px;
-    }
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 25px;
+}
+.season {
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+  /* color: black; */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  padding-left: 7px;
+}
+.title {
+  /* color: black; */
+  color: aliceblue;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}

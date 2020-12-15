@@ -30,18 +30,20 @@ const SeasonMenu = () => {
               return (
                 <div className={styles.card}>
                   <Card
-                    style={{
-                      width: "18rem",
-                      backgroundColor: "RGB(69, 75, 82)",
-                      paddingBlockEnd: "10px",
-                    }}
+                    className={styles.cardCont}
+                    // style={{
+                    //   width: "22rem",
+                    //   backgroundColor: "black",
+                    //     boxShadow: "5px 10px #888888",
+                    //   //backgroundColor: "RGB(242, 242, 242)"
+                    // }}
                   >
                     <Card.Body>
-                      <Card.Title>{year}</Card.Title>
+                      <Card.Title className={styles.title}>{year}</Card.Title>
                       {seasons.map((season) => (
                         <Card.Link
-                          href="#"
                           className={styles.season}
+                          href="#"
                           onClick={(event) => {
                             event.preventDefault();
                             history.push({
