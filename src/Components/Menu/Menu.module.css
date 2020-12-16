@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 600px) {
   .menuItem {
-    font-size: 115% !important ;
+    font-size: 100% !important ;
     font-weight: 500 !important ;
     color: aliceblue !important ;
     padding-left: 0px;
