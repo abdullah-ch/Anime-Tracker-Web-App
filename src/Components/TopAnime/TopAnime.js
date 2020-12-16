@@ -21,7 +21,7 @@ const TopAnime = () => {
     setAnimeDataDay(dayResults);
   };
 
-  console.log(animeDataDay);
+
 
   return (
     <div>
