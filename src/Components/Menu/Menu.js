@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Menu.module.css";
-import { Container, Navbar, ListGroup } from "react-bootstrap";
+import { Container, Navbar } from "react-bootstrap";
 
 const Menu = () => {
   return (
@@ -40,44 +40,6 @@ const Menu = () => {
           </Navbar.Brand>
         </Navbar>
       </Container>
-      {/* <ListGroup horizontal className={styles.categories}>
-        <ListGroup.Item className={styles.categoryItem}>
-          <a
-            href="null"
-            onClick={(event) => {
-              event.preventDefault();
-              window.location = "/anime/categories";
-            }}
-          >
-            Genres
-          </a>
-        </ListGroup.Item>
-
-        <ListGroup.Item className={styles.categoryItem}>
-          <a
-            href="null"
-            onClick={(event) => {
-              event.preventDefault();
-              window.location = "/anime/season/later";
-            }}
-          >
-            Upcoming Anime
-          </a>
-        </ListGroup.Item>
-
-        <ListGroup.Item  className={styles.categoryItem}>
-          <a
-           
-            href="null"
-            onClick={(event) => {
-              event.preventDefault();
-              window.location = "/anime/archive";
-            }}
-          >
-            Seasons
-          </a>
-        </ListGroup.Item>
-      </ListGroup> */}
     </div>
   );
 };
