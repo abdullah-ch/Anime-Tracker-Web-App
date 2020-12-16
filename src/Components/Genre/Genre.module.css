@@ -1,10 +1,26 @@
 .gridContainer {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.genreCard {
+  width: 11rem;
+  background-color: black;
   
 }
 
 .gridItem {
   text-align: center;
-  color: aliceblue;
+  color:aliceblue;
+  font-weight: 500;
+}
+
+
+.genreCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: RGB(229, 9, 20);
+  font-size: xx-large;
+  padding: 5px;
+  cursor: pointer;
 }

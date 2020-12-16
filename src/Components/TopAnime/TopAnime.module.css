@@ -17,6 +17,7 @@
   transition: 0.3s;
   background-color: RGB(229, 9, 20);
   padding: 10px;
+   cursor: pointer;
 }
 h5 {
   color: aliceblue;
