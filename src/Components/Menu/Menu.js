@@ -1,11 +1,47 @@
 import React from "react";
 import styles from "./Menu.module.css";
+import { Container, Navbar, ListGroup } from "react-bootstrap";
 
 const Menu = () => {
   return (
     <div>
-      <ul className={styles.categories}>
-        <li>
+      <Container>
+        <Navbar className={styles.menu}>
+          <Navbar.Brand
+            className={styles.menuItem}
+            href="#"
+            onClick={(event) => {
+              event.preventDefault();
+              window.location = "/anime/categories";
+            }}
+          >
+            Genres
+          </Navbar.Brand>
+          <Navbar.Brand
+            className={styles.menuItem}
+            href="#"
+            onClick={(event) => {
+              event.preventDefault();
+              window.location = "/anime/season/later";
+            }}
+          >
+            {" "}
+            Upcoming Anime
+          </Navbar.Brand>
+          <Navbar.Brand
+            className={styles.menuItem}
+            href="#"
+            onClick={(event) => {
+              event.preventDefault();
+              window.location = "/anime/archive";
+            }}
+          >
+            Seasons
+          </Navbar.Brand>
+        </Navbar>
+      </Container>
+      {/* <ListGroup horizontal className={styles.categories}>
+        <ListGroup.Item className={styles.categoryItem}>
           <a
             href="null"
             onClick={(event) => {
@@ -15,9 +51,9 @@ const Menu = () => {
           >
             Genres
           </a>
-        </li>
+        </ListGroup.Item>
 
-        <li>
+        <ListGroup.Item className={styles.categoryItem}>
           <a
             href="null"
             onClick={(event) => {
@@ -27,10 +63,11 @@ const Menu = () => {
           >
             Upcoming Anime
           </a>
-        </li>
+        </ListGroup.Item>
 
-        <li>
+        <ListGroup.Item  className={styles.categoryItem}>
           <a
+           
             href="null"
             onClick={(event) => {
               event.preventDefault();
@@ -39,8 +76,8 @@ const Menu = () => {
           >
             Seasons
           </a>
-        </li>
-      </ul>
+        </ListGroup.Item>
+      </ListGroup> */}
     </div>
   );
 };

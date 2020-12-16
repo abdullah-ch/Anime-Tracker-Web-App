@@ -1,11 +1,44 @@
-.categories {
-    padding-top: 5px;
-  text-align: center;
-   font-size: 250%;
-  font-weight: 500;
+.menu {
+  justify-content: center !important ;
+  text-align: center !important ;
+  background-color: black;
+  color: brown;
 }
 
-li {
+.menuItem {
+  font-size: 250% !important ;
+  font-weight: 500 !important ;
+  color: aliceblue !important ;
+  padding-left: 20px;
+}
+
+.menuItem:hover {
+  color: RGB(229, 9, 20) !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuItem {
+    font-size: 115% !important ;
+    font-weight: 500 !important ;
+    color: aliceblue !important ;
+    padding-left: 0px;
+  }
+}
+
+.categories {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 250%;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.categoryItem {
+  background-color: black !important  ;
+}
+
+/* li {
   display: inline;
   margin: 20px;
-}
+} */
