@@ -48,15 +48,14 @@ a {
   h1 {
     color: aliceblue;
     text-align: center;
-    padding-top: 0px;
-     font-size: 30px !important;
+    padding-top: 10px;
+    font-size: 30px !important;
   }
 
   .animeImage {
     padding: 20px;
-    width: 138px !important;
-    height: 173px !important;
-   
+    width: 158px !important;
+    height: 193px !important;
   }
 
   .size,
@@ -72,7 +71,7 @@ a {
     flex-wrap: nowrap;
     overflow-x: scroll;
     justify-content: stretch;
-    padding-bottom: 10px !important;
+    padding-bottom: 30px !important;
   }
 
   .move:hover {
