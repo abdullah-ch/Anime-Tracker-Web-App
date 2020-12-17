@@ -64,10 +64,10 @@ const TopAnime = () => {
                   className={styles.move}
                 >
                   <img  className = {styles.animeImage} src={anime.image_url} alt="anime" />
-                  <div className={styles.size}>
-                    <h5>
+                  <div className={styles.animeSize}>
+                    <h3>
                       <b>{anime.title}</b>
-                    </h5>
+                    </h3>
                   </div>
                 </a>
               );
@@ -114,10 +114,10 @@ const TopAnime = () => {
                     src={anime.image_url}
                     alt="anime"
                   />
-                  <div className={styles.size}>
-                    <h5>
+                  <div className={styles.animeSize}>
+                    <h3>
                       <b>{anime.title}</b>
-                    </h5>
+                    </h3>
                   </div>
                 </a>
               );
@@ -163,10 +163,10 @@ const TopAnime = () => {
                       src={anime.image_url}
                       alt="anime"
                     />
-                    <div className={styles.size}>
-                      <h5>
+                    <div className={styles.animeSize}>
+                      <h3>
                         <b>{anime.title}</b>
-                      </h5>
+                      </h3>
                     </div>
                   </a>
                 );

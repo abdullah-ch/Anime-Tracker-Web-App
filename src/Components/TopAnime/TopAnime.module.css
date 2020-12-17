@@ -19,7 +19,7 @@
   padding: 10px;
   cursor: pointer;
 }
-h5 {
+h3 {
   color: aliceblue;
   text-align: center;
 }
@@ -39,7 +39,7 @@ a {
   height: 350px;
 }
 
-.size {
+.animeSize {
   width: 250px;
   text-align: center;
 }
@@ -58,8 +58,8 @@ a {
     height: 193px !important;
   }
 
-  .size,
-  h5 {
+  .animeSize,
+  h3 {
     width: 150px !important;
     text-align: center !important;
     justify-content: center !important;
