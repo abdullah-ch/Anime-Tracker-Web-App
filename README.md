@@ -4,7 +4,7 @@
 	<img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square">
 	<img src="https://visitor-badge.glitch.me/badge?page_id=abdullah-ch.Anime-Tracker-Web-App" alt="visitor badge"/>
 </div>
-<h4 align="center">A web application that shows you the  Recent releases, top rated, upcoming hyped anime along with search capability.</h4>
+<h4 align="center">A web application that shows you the  Recent releases, top rated, upcoming hyped anime along with search capability and more.</h4>
  
  
 ## 👉LIVE LINK
@@ -22,8 +22,11 @@
 
 ## 🚀 FEATURES
 
-- Show you Recent releases, top rated and upcoming hyped anime.
-- you can search as well
+- Shows you Daily releases, top rated and upcoming hyped anime.
+- Search any anime
+- Search anime from 43 Genres
+- Shows all upcoming anime
+- Browse anime yearly from all 4 seasons
 
 ## 🙌🏻 PROPS
 
