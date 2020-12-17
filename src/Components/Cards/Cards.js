@@ -56,7 +56,7 @@ const Cards = () => {
               >
                 <img src={anime.image_url} alt="anime" />
                 <div className={styles.size}>
-                  <h5 className={styles.heading}>
+                  <h5>
                     <b>{anime.title}</b>
                   </h5>
                 </div>

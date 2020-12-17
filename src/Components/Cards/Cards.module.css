@@ -1,6 +1,6 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
@@ -20,9 +20,6 @@
   padding: 10px;
   cursor: pointer;
 }
-.heading {
-  color: aliceblue;
-}
 
 h1 {
   color: aliceblue;
@@ -38,9 +35,30 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+  img {
+    padding: 20px !important;
+    width: 265px !important;
+    height: 350px !important;
+  }
+  .move:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: RGB(229, 9, 20);
+    padding: 10px !important;
+    cursor: pointer;
+  }
   .container {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    display: flex !important;
+    flex-flow: row wrap !important;
+    align-items: center !important;
+    border: 4px dotted blue !important    ;
+  }
+
+   .size,
+  h5 {
+    width: 250px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: 25px !important;
   }
 }
