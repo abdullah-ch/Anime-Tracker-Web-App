@@ -17,7 +17,7 @@
   transition: 0.3s;
   background-color: RGB(229, 9, 20);
   padding: 10px;
-   cursor: pointer;
+  cursor: pointer;
 }
 h5 {
   color: aliceblue;
@@ -33,14 +33,53 @@ h1 {
 a {
   text-decoration: none !important;
 }
-img {
+.animeImage {
   padding: 20px;
   width: 265px;
   height: 350px;
 }
 
-
 .size {
   width: 250px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 0px;
+     font-size: 30px !important;
+  }
+
+  .animeImage {
+    padding: 20px;
+    width: 138px !important;
+    height: 173px !important;
+   
+  }
+
+  .size,
+  h5 {
+    width: 120px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+    padding-bottom: 10px !important;
+  }
+
+  .move:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: RGB(229, 9, 20);
+    padding: 0px;
+    cursor: pointer;
+  }
 }
