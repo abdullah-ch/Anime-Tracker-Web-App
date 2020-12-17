@@ -1,15 +1,13 @@
 .box {
   padding: 50px 330px 330px 330px;
-  color:aliceblue
+  color: aliceblue;
 }
-
 
 .btn {
   color: aliceblue;
   align-content: center;
 
-  background-color: rgb(66, 64, 64); 
-  
+  background-color: rgb(66, 64, 64);
 }
 
 .btn:hover {
@@ -52,8 +50,8 @@ p {
     padding: 0px;
     text-align: center;
   }
-  
-.image {
-  text-align: center;
-}
+
+  .image {
+    text-align: center;
+  }
 }

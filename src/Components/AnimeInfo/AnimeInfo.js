@@ -5,8 +5,7 @@ import { Button } from "react-bootstrap";
 
 const AnimeInfo = () => {
   const location = useLocation();
-  console.log("The data props issss", location.state.title);
-
+  
   const genres = () => {
     if (location.state.genres) {
       return location.state.genres.map((genre) => (
