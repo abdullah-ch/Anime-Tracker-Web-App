@@ -12,7 +12,6 @@
  
 ## 🎩 Screenshot
 <div>
-
   <img src="src\Components\anime1.PNG" alt="anime list">
   <br>
   <img src="src\Components\anime2.PNG" alt="anime">
