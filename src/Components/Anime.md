@@ -2,13 +2,7 @@
 title, image_url, synopsis, score, rated , airing , episodes , start_date ,
 end_date , mal_id , url, members
 
-Above are all the objects in the api !
-
-
-.. Look into Api.js for further concern!
-I have used 4 variants of this API!
-
-#Future Updates !
+Above are all the objects in the data object of the API !
 
 ##https://api.jikan.moe/v3/season/archive
 returns all the documentated anime including the seasons i.e summer-winter-spring-fall
