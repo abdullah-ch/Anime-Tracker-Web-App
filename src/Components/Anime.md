@@ -19,12 +19,12 @@ returns anime released in winter in 2018
 ## https://api.jikan.moe/v3/season/later
 
 
-return upcoming anime
+returns upcoming anime
 
 ## https://api.jikan.moe/v3/genre/anime/1/1
 
 
-return all action anime (there are about 43 genre, checkout mal genres !)
+returns all action anime (there are about 43 genre, checkout mal genres !)
 
 
 
