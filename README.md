@@ -12,11 +12,20 @@
  
 ## 🎩 Screenshot
 <div>
-
   <img src="src\Components\anime1.PNG" alt="anime list">
   <br>
   <img src="src\Components\anime2.PNG" alt="anime">
-  	
+  <br>
+  <img src="src\Components\anime3.png" alt="anime">
+
+  <br>
+  <img src="src\Components\anime4.png" alt="anime">
+
+  <br>
+<img src="src\Components\anime5.png" alt="anime">
+<br>
+<img src="src\Components\anime6.png" alt="anime">
+<br>
 </div>
 
 
@@ -24,7 +33,7 @@
 
 - Shows you Daily releases, top rated and upcoming hyped anime.
 - Search any anime
-- Search anime from 43 Genres
+- Browse anime from 43 Genres
 - Shows all upcoming anime
 - Browse anime yearly from all 4 seasons
 
