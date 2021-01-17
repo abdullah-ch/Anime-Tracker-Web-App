@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./App.module.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SearchBar from "./Components/SearchBar/SearchBar";
-import AnimeInfo from "./Components/AnimeInfo/AnimeInfo";
+import AnimeInfo from "./Components/CommonComponents/AnimeInfo/AnimeInfo";
 import Cards from "./Components/Cards/Cards";
 import Genre from "./Components/Genre/Genre";
 import CustomFooter from "./Components/Footer/Footer";

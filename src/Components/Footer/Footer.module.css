@@ -25,3 +25,17 @@ a:hover {
 .spann:hover {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .love {
+    font-size: 1.8em;
+  }
+}

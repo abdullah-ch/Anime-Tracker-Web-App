@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+  padding-bottom: 30px;
+}
+
+.move:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: RGB(229, 9, 20);
+  padding: 10px;
+  cursor: pointer;
+}
+h3 {
+  color: aliceblue;
+  text-align: center;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none !important;
+}
+.animeImage {
+  padding: 20px;
+  width: 265px;
+  height: 350px;
+}
+
+.move {
+  margin: 15px;
+  width: auto;
+}
+.animeSize {
+  text-align: center;
+}
+
+#title {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px !important;
+  }
+
+  .move {
+    margin: 0px;
+  }
+
+  .animeImage {
+    padding: 20px;
+    width: 158px !important;
+    height: 193px !important;
+  }
+
+  .animeSize,
+  h3 {
+    width: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+    padding-bottom: 30px !important;
+  }
+
+  .move:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: RGB(229, 9, 20);
+    padding: 0px;
+    cursor: pointer;
+  }
+}

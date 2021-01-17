@@ -50,7 +50,9 @@ p {
     padding: 0px;
     text-align: center;
   }
-
+  .synopsis {
+    text-align: left !important;
+  }
   .image {
     text-align: center;
   }

@@ -4,17 +4,16 @@
   flex-flow: row wrap;
 }
 .genreCard {
-  width: 11rem;
+  width: 12.5rem;
   background-color: black;
-  
 }
 
 .gridItem {
   text-align: center;
-  color:aliceblue;
+  color: aliceblue;
   font-weight: 500;
+  font-size: 24px;
 }
-
 
 .genreCard:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

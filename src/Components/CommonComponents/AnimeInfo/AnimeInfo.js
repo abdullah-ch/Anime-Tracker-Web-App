@@ -101,7 +101,8 @@ const AnimeInfo = () => {
               <span className={styles.text}>Synopsis</span>
             </p>
           ) : null}
-          {synopsis()}
+          <div className = {styles.synopsis}>{synopsis()}</div>
+
           <Button
             onClick={() => {
               window.location.href = `${location.state.url}`;
