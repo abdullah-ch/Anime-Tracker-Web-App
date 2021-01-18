@@ -18,6 +18,7 @@ const App = () => {
     <Router>
       <div className={styles.container}>
         <SearchBar />
+        {/* creating routes */}
         <Route path="/" exact component={Main} />
         <Route path="/anime/info" component={AnimeInfo} />
         <Route path="/anime/cards" component={Cards} />

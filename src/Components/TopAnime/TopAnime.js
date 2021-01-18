@@ -22,6 +22,8 @@ const TopAnime = () => {
   return (
     <div>
       <h1>Recent Release</h1>
+
+      {/*reusing components */}
       <CommonCard animeData={animeDataDay} />
 
       <h1>Top Rated </h1>

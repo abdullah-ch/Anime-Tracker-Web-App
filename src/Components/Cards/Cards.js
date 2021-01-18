@@ -5,13 +5,16 @@ import DisplayCommonCard from "../CommonComponents/DisplayCommonCard/DisplayComm
 const Cards = () => {
   const [aanimeArray, setAnimeArray] = useState([]);
 
+  // calling the API only one
   useEffect(() => {
     callApi();
   }, []);
 
   const callApi = async () => {
+    // storing the animeName from the page's url
     const path = window.location.pathname.split("/");
     const animeName = path[path.length - 1];
+    // awaiting so the async call can be complete
     var results = await apiData(animeName);
     setAnimeArray(results);
   };

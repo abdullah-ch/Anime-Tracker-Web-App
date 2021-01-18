@@ -5,6 +5,7 @@ import DisplayCommonCard from "../CommonComponents/DisplayCommonCard/DisplayComm
 
 const SeasonCards = () => {
   const [seasonAnimeArray, setSeasonAnimeArray] = useState([]);
+  // react router dom's hook through which we can access the data that is sent to the routed component
   const location = useLocation();
 
   useEffect(() => {
@@ -14,6 +15,7 @@ const SeasonCards = () => {
 
   const callApi = async () => {
     try {
+      // accessing the data from the router's pipeline
       const year = location.state.year;
       let season = location.state.season;
       season = season.toLowerCase();

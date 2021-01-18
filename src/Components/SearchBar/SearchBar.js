@@ -11,6 +11,7 @@ const SearchBar = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // directing to a new page, that is routed to cards' component
     window.location = `/anime/cards/${animeName}`;
   };
 

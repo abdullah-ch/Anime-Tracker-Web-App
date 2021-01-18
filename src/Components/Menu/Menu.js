@@ -11,6 +11,7 @@ const Menu = () => {
             className={styles.menuItem}
             href="#"
             onClick={(event) => {
+              // preventing the default behavior
               event.preventDefault();
               window.location = "/anime/categories";
             }}

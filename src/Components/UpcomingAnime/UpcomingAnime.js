@@ -16,6 +16,8 @@ const UpcomingAnime = () => {
 
   return (
     <div>
+      {/*reusing component// awaiting so the async call can be complete
+       */}
       <DisplayCommonCard animeData={upcomingAnimeArray} />
     </div>
   );

@@ -5,6 +5,8 @@ import { Card } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
 const SeasonMenu = () => {
+  // React-Router-Dom's hook which can send data into the router's pipeline
+  // towards the desired routed component
   let history = useHistory();
 
   const [seasonArchiveArray, setSeasonArchiveArray] = useState([]);
@@ -22,6 +24,7 @@ const SeasonMenu = () => {
     <div>
       <h1>Season Archive</h1>
       <div className={styles.container}>
+        {/*if array is empty do nothing (using conditional rendering) */}
         {seasonArchiveArray === []
           ? null
           : seasonArchiveArray.map(({ seasons, year }, key) => {
@@ -45,6 +48,8 @@ const SeasonMenu = () => {
                           key={key}
                           onClick={(event) => {
                             event.preventDefault();
+                            // sending the data into the router's pipeline (history stack)
+                            // towards the desired route
                             history.push({
                               pathname: `/anime/season/${year}/${season}`,
                               state: {

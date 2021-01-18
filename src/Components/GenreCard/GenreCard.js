@@ -8,12 +8,14 @@ const GenreCard = () => {
 
   const [genreArray, setGenreArray] = useState([]);
 
+  // calling the api only one
   useEffect(() => {
     callGenreApi();
     // eslint-disable-next-line
   }, []);
 
   const callGenreApi = async () => {
+    // awaiting so the async call can be complete
     let genreData = await apiDataGenres(location.state.genreID);
     setGenreArray(genreData);
   };
