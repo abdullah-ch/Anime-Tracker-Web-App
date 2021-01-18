@@ -16,7 +16,6 @@ const Cards = () => {
     setAnimeArray(results);
   };
 
-  console.log("Anime Array", aanimeArray);
   return (
     <div>
       <DisplayCommonCard animeData={aanimeArray} />

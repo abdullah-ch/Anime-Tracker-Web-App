@@ -10,15 +10,20 @@ const CommonCard = ({ animeData }) => {
         <br />
         {animeData === []
           ? null
-          : animeData.map((anime) => {
-              console.log("Recent anime", anime);
+          : animeData.map((anime, key) => {
+              // console.log(
+              //   `Anime title is ${
+              //     anime.title
+              //   } and Regx vala is ${anime.title.replace(/\s+/g, "")} `
+              // );
               return (
                 <a
-                  href
+                  key={key}
+                  href="true"
                   onClick={(event) => {
                     event.preventDefault();
                     let animeName = anime.title;
-                    animeName = animeName.replace(/\s+/g, "");
+                    animeName = animeName.replace(/\s+/g, ""); // removes all global white spaces
                     history.push({
                       pathname: `/anime/info/${animeName}`,
                       state: {

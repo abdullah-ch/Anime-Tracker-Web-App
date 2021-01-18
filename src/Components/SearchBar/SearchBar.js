@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Form, FormControl, Button } from "react-bootstrap";
 import styles from "./SearchBar.module.css";
 
-const SearchBar = (props) => {
+const SearchBar = () => {
   const [animeName, setAnimeName] = useState("");
 
   const handleChange = (event) => {
@@ -18,7 +18,7 @@ const SearchBar = (props) => {
     event.preventDefault();
     window.location = "/";
   };
-  console.log("This animeName is", animeName);
+
   return (
     <div className={styles.container}>
       <Navbar className={styles.nav}>

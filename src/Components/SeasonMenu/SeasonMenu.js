@@ -18,17 +18,15 @@ const SeasonMenu = () => {
     setSeasonArchiveArray(data);
   };
 
-  console.log("archive array isss", seasonArchiveArray);
-
   return (
     <div>
       <h1>Season Archive</h1>
       <div className={styles.container}>
         {seasonArchiveArray === []
           ? null
-          : seasonArchiveArray.map(({ seasons, year }) => {
+          : seasonArchiveArray.map(({ seasons, year }, key) => {
               return (
-                <div className={styles.card}>
+                <div className={styles.card} key={key}>
                   <Card
                     className={styles.cardCont}
                     // style={{
@@ -40,10 +38,11 @@ const SeasonMenu = () => {
                   >
                     <Card.Body>
                       <Card.Title className={styles.title}>{year}</Card.Title>
-                      {seasons.map((season) => (
+                      {seasons.map((season, key) => (
                         <Card.Link
                           className={styles.season}
                           href="#"
+                          key={key}
                           onClick={(event) => {
                             event.preventDefault();
                             history.push({

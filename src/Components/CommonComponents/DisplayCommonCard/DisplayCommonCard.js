@@ -11,10 +11,12 @@ const DisplayCommonCard = ({ animeData }) => {
         : animeData.map((anime, key) => {
             return (
               <a
-                href
+                href="true"
+                key={key}
                 onClick={(event) => {
                   event.preventDefault();
                   let animeName = anime.title;
+                  console.log(`Without using Replace Regex ${animeName}`);
                   animeName = animeName.replace(/\s+/g, "");
                   history.push({
                     pathname: `/anime/info/${animeName}`,

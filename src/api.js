@@ -146,7 +146,6 @@ export const apiDataYearSeason = async (year, season) => {
     const {
       data: { anime },
     } = await axios.get(`${url}/season/${year}/${season}`);
-    console.log("DataYear", anime);
     return anime;
   } catch (error) {
     console.log(error);

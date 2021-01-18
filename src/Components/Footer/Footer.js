@@ -49,7 +49,7 @@ const CustomFooter = () => {
         </span>
       </a>
 
-      <p class="love">
+      <p className="love">
         Made with <FontAwesomeIcon color="red" icon={faHeart} /> by
         <span
           className={styles.spann}

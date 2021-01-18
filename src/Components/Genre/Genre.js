@@ -9,7 +9,7 @@ const Genre = () => {
   return (
     <div className={styles.gridContainer}>
       {genres.map((genre, i) => (
-        <div>
+        <div key={i}>
           <Card className={styles.genreCard}>
             <Card.Body>
               <Card.Title

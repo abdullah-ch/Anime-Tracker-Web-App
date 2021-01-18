@@ -5,11 +5,11 @@ import { Button } from "react-bootstrap";
 
 const AnimeInfo = () => {
   const location = useLocation();
-  
+
   const genres = () => {
     if (location.state.genres) {
-      return location.state.genres.map((genre) => (
-        <a href={genre.url}>
+      return location.state.genres.map((genre, key) => (
+        <a key={key} href={genre.url}>
           <p>
             <li>{genre.name}</li>
           </p>
@@ -101,7 +101,7 @@ const AnimeInfo = () => {
               <span className={styles.text}>Synopsis</span>
             </p>
           ) : null}
-          <div className = {styles.synopsis}>{synopsis()}</div>
+          <div className={styles.synopsis}>{synopsis()}</div>
 
           <Button
             onClick={() => {
