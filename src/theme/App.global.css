@@ -1,0 +1,35 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+th,
+tr,
+td,
+p {
+    color: #fff !important;
+}
+
+svg,
+img {
+    color: #fff !important;
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: local('Comfortaa'),
+        url(../assets/fonts/Comfortaa-VariableFont_wght.ttf);
+}
