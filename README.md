@@ -7,8 +7,8 @@
 <h4 align="center">A web application that shows you the  Recent releases, top rated, upcoming hyped anime along with search capability and more.</h4>
  
  
-## 👉LIVE LINK
->https://abdullahch-anime-tracker.netlify.app/
+<!--- ## 👉LIVE LINK
+>https://abdullahch-anime-tracker.netlify.app/ --->
  
 ## 🎩 Screenshot
 <div>
